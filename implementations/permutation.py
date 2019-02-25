@@ -22,5 +22,5 @@ def permutation2(input_list):
         for i in range(len(input_list)):
             element = input_list[i]
             other_elements = input_list[:i] + input_list[i + 1:]
-            for p in permutation(other_elements):
-                yeild[element] + p
+            for p in permutation2(other_elements):
+                yield [element] + p
