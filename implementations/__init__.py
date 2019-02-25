@@ -1,1 +1,1 @@
-from implementations.permutation import permutation
+from implementations.permutation import *
