@@ -6,4 +6,6 @@ def setBit(num, i):
     return num | (1 << i)
 
 
-def clearBit(num, i)
+def clearBit(num, i):
+    mask = ~(1 << i)
+    return num & mask
