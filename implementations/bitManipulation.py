@@ -13,8 +13,9 @@ def clearBit(num, i):
 
 def clearBitsMostSignificantThroughI(num, i):
     mask = (1 << i) - 1
+    return num & mask
 
 
-def clearBitsithrough0(int num, int i):
+def clearBitsithrough0(num, i):
     mask = -1 << (i + 1)
     return num & mask
