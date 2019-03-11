@@ -1,5 +1,5 @@
 from unittest import TestCase
-from implementations import clearBit, clearBitsMostSignificantThroughI, clearBitsithrough0
+from implementations import clearBit, clearBitsMostSignificantThroughI, clearBitsithrough0, updateBitsInRange
 
 
 class BitManipulationTest(TestCase):
@@ -12,3 +12,6 @@ class BitManipulationTest(TestCase):
 
     def test_clearBitsithrough0(self):
         self.assertEqual(clearBitsithrough0(7, 1), 4)
+
+    def test_updateBitsInRange(self):
+        self.assertEqual(updateBitsInRange(11, 3, 2, 1), 15)

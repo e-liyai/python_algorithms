@@ -19,3 +19,16 @@ def clearBitsMostSignificantThroughI(num, i):
 def clearBitsithrough0(num, i):
     mask = -1 << (i + 1)
     return num & mask
+
+
+def updateBitsInRange(outerNum, innerNum, higher, lower):
+    counter = lower
+    x = None
+    while counter <= higher:
+        k = (1 << counter)
+        x = k if x == None else pass
+        x |= k
+        counter += 1
+    outerNum |= x
+    innerNum << lower
+    return outerNum & innerNum
