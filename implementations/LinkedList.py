@@ -9,11 +9,11 @@ class LinkedList:
         self.tail = Node()
 
     def add_last(self, value):
-        new_node = Node(value)
         if self.count == 0:
             self.head.add_value(value)
             self.tail.next = self.head
         else:
+            new_node = Node(value)
             self.tail.next.next = new_node
             self.tail.next = new_node
         self.count += 1
