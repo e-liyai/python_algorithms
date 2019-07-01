@@ -9,3 +9,6 @@ class Node:
 
     def remove_next_node(self):
         self.next = None
+
+    def add_value(self, value):
+        self.value = value
