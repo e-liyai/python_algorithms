@@ -26,7 +26,7 @@ def updateBitsInRange(outerNum, innerNum, higher, lower):
     x = None
     while counter <= higher:
         k = (1 << counter)
-        x = k if x == None else pass
+        x = k if x == None else None
         x |= k
         counter += 1
     outerNum |= x

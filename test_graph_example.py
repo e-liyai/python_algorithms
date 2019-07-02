@@ -1,4 +1,4 @@
-from implementations.graph import Graph
+from implementations import Graph
 graph = Graph()
 
 
