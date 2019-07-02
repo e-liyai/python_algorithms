@@ -27,4 +27,4 @@ if __name__ == "__main__":
     for word in words:
         build_vertice_in_graph(word, words)
 
-    print(graph.linkedListDict)
+    print(graph.serialize())

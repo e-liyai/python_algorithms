@@ -1,4 +1,5 @@
 from .LinkedList import LinkedList
+import json
 
 
 class Graph:
@@ -12,3 +13,7 @@ class Graph:
             linked_list.add_last(value)
 
         self.linkedListDict[vertex] = linked_list
+
+    @staticmethod
+    def serialize(self):
+        return json.dumps(self.linkedListDict)
