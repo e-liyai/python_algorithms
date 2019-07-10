@@ -28,3 +28,5 @@ if __name__ == "__main__":
         build_vertice_in_graph(word, words)
 
     print(graph.linkedListDict)
+
+

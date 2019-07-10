@@ -1,4 +1,5 @@
 from .LinkedList import LinkedList
+from .queue import Queue
 
 
 class Graph:
@@ -12,3 +13,8 @@ class Graph:
             linked_list.add_last(value)
 
         self.linkedListDict[vertex] = linked_list
+
+    def breadth_first_search(self, value):
+        queue = Queue()
+        if self.linkedListDict:
+
