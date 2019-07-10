@@ -17,4 +17,7 @@ class Graph:
     def breadth_first_search(self, value):
         queue = Queue()
         if self.linkedListDict:
+            for key, value in self.linkedListDict:
+                queue.add(value.pop_first())
+
 
