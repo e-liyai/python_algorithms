@@ -19,9 +19,9 @@ def knapsack_dynamic_solution(objects, max_weight):
         while weight <= max_weight:
 
             if no_items == 0 or weight == 0:
-                two_dim_array[no_items, weight] = 0
+                two_dim_array[no_items][weight] = 0
             elif objects['weight'][no_items] <= weight:
-                two_dim_array[no_items, weight] = max(
+                two_dim_array[no_items][weight] = max(
                     objects['value'][no_items] + two_dim_array[no_items - 1][weight - objects['weight'][no_items]],
                     two_dim_array[no_items - 1][weight]
                 )
@@ -31,4 +31,4 @@ def knapsack_dynamic_solution(objects, max_weight):
             weight += 1
         no_items += 1
 
-    print(two_dim_array[len(objects['weight']][max_weight])
+    print(two_dim_array[len(objects['weight'])][max_weight])
